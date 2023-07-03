@@ -1,0 +1,31 @@
+program code
+import random
+def roll_dice():
+    min_value=1
+    max_value=6
+    roll_again=input("do you want to roll the dice again?(y/n)")
+    while roll_again.lower()=="yes" or roll_again.lower()=="y":
+       
+        dice_value = random.randint(min_value, max_value)
+        print("you rolled",dice_value)
+        roll_again=input("do you want to roll the dice again?(y/n)")
+roll_dice()
+
+output:
+--------#do you want to roll the dice again?(y/n)y
+you rolled 1
+do you want to roll the dice again?(y/n)y
+you rolled 1
+do you want to roll the dice again?(y/n)y
+you rolled 6
+do you want to roll the dice again?(y/n)y
+you rolled 4
+do you want to roll the dice again?(y/n)y
+you rolled 4
+do you want to roll the dice again?(y/n)y
+you rolled 6
+do you want to roll the dice again?(y/n)y
+you rolled 3
+do you want to roll the dice again?(y/n)y
+you rolled 6
+do you want to roll the dice again?(y/n)n
